@@ -80,6 +80,7 @@ def parse_args():
     parser.add_argument(
         '--skip-compilation', '-s',
         action='store_true',
+        default=True,
         help='Skip PDF compilation (generate TEX only)'
     )
     parser.add_argument(
