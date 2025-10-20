@@ -540,7 +540,8 @@ def main():
                     editor = ReactInteractiveEditor(
                         workflow_state.tex_output_path, 
                         source_content=source_text,
-                        workflow_state=workflow_state
+                        workflow_state=workflow_state,
+                        model_name=args.model
                     )
                     editor.interactive_session()
                 else:
